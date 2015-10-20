@@ -1,8 +1,6 @@
 package Chapter3.Classes;
 
-/**
- * Created by Vitalii.Nedzelskyi on 16.10.2015.
- */
+
 public class Customer {
 
     private static long counter;

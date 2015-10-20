@@ -3,9 +3,7 @@ package Chapter3.Classes;
 
 import java.util.Date;
 
-/**
- * Created by Vitalii.Nedzelskyi on 13.10.2015.
- */
+
 public class Student {
 
     private static int id;

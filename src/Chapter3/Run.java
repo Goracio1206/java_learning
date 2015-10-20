@@ -6,24 +6,20 @@ import Chapter3.Classes.Test;
 import java.util.ArrayList;
 import java.util.Collections;
 
-/**
- * Created by Vitalii.Nedzelskyi on 12.10.2015.
- */
+
 
 /**
  * @author Vitalii.Nedzelskyi
  * @version 1.0
  * @serial sdfasdfasdf
+ * @serial asdfasdf
   */
 public class Run {
     public static void main(String[] args) throws Exception {
         Customer cust = new Customer();
         Customer cust2 = new Test();
 
-        cust.test();
-        cust2.test();
-        ((Test)cust2).test1();
-        Test.test1();
+
 
 
         /* ArrayList<String> list = new ArrayList<String>();

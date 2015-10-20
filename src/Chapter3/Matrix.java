@@ -2,9 +2,7 @@ package Chapter3;
 
 import java.util.Random;
 
-/**
- * Created by Vitalii.Nedzelskyi on 12.10.2015.
- */
+
 public class Matrix {
     Random rand = new Random(47);
     private int matrix[][];
