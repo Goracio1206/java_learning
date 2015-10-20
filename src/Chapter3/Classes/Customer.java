@@ -89,7 +89,7 @@ public class Customer {
 
     }
     public static void test(){
-        System.out.println("bla bla adfasdsgsdfgsdff adsf asd asd f");
+        System.out.println("bla bla adfadff adsf asd asd f");
     }
 
 
