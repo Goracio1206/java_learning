@@ -89,8 +89,8 @@ public class Customer {
 
     }
     public static void test(){
-        System.out.println("bla bla adfaassdfasdfasdfdsf asd asd f");
-    }
+        System.out.println(" asd asd f");
+}
 
 
 
