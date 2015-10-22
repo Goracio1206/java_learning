@@ -5,7 +5,7 @@ package Facultativ;
  * Студент записывается на Курс, обучается и по окончании Препода-ватель выставляет Оценку,
  * которая сохраняется в Архиве. Студентов, Преподавателей и Курсов при обучении может быть несколько.
  */
-public class Facultativ {
-    private String facultativ;
+public class Teacher extends Person {
+
 
 }
