@@ -1,5 +1,6 @@
 package Facultativ;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
@@ -8,7 +9,13 @@ import java.util.HashMap;
  * которая сохраняется в Архиве. Студентов, Преподавателей и Курсов при обучении может быть несколько.
  */
 public class Student extends Person {
-    private HashMap<String, Integer> map = new HashMap<String, Integer>();
+
+    private ArrayList<Classes> classes = new ArrayList<Classes>();
+
+    @Override
+    public String toString() {
+        return super.toString() + "\n" + classes.toString();
+    }
 
 
 

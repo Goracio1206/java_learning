@@ -35,4 +35,14 @@ public class Classes {
     public void setPoint(int point) {
         this.point = point;
     }
+
+    private String print() {
+        StringBuilder stb = new StringBuilder();
+
+    }
+
+    @Override
+    public String toStrong() {
+        return
+    }
 }
