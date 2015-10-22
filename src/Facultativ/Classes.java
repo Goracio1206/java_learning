@@ -38,11 +38,12 @@ public class Classes {
 
     private String print() {
         StringBuilder stb = new StringBuilder();
-
+        stb.append(classesName + " - " + point);
+        return stb.toString();
     }
 
     @Override
-    public String toStrong() {
-        return
+    public String toString() {
+        return print();
     }
 }
