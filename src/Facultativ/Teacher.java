@@ -1,6 +1,7 @@
 package Facultativ;
 
 import java.util.ArrayList;
+import java.util.Map;
 
 
 /**
@@ -40,10 +41,19 @@ public class Teacher extends Person {
     }
 
     public void prinClasses() {
-
         for (Classes elem : openedCalsses){
             System.out.println(elem);
         }
+    }
+
+    public void setPoint(Student student, int point) {
+       for (Classes elem : openedCalsses){
+           for (Map.Entry<Student, Integer> st : elem.getStudentsList().entrySet()) {
+               if (st.getKey().equals(student)) {
+                   st.setValue(point);
+               }
+           }
+       }
     }
 
     @Override

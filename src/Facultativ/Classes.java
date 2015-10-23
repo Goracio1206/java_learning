@@ -26,6 +26,9 @@ public class Classes extends Teacher {
         return classes;
     }
 
+    public HashMap<Student, Integer> getStudentsList() {
+        return studentsList;
+    }
 
     public void addStudent(Student student, int point) {
         this.studentsList.put(student, point);
@@ -34,7 +37,7 @@ public class Classes extends Teacher {
     private String printStudentsList(){
         StringBuilder stb = new StringBuilder();
         for (Map.Entry<Student, Integer> elem : studentsList.entrySet()){
-            stb.append(elem.getKey() + " - " + elem.getValue());
+            stb.append(elem.getKey() + " - " + elem.getValue() + "\n");
         }
         return stb.toString();
     }
