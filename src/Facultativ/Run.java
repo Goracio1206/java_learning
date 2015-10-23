@@ -26,9 +26,7 @@ public class Run {
         st1.startStudy(teacher1, "Biology", st6);
         st1.startStudy(teacher1, "Biology", st7);
 
-        //teacher1.prinClasses();
         //st1.startStudy(teacher1, "IT", st1);
-
 
         teacher1.setPoint(st1, 3);
         teacher1.setPoint(st2, 2);
@@ -41,5 +39,8 @@ public class Run {
 
         System.out.println();
         teacher1.prinClasses();
+
+        Archive ar = new Archive();
+        ar.addToArchive(teacher1, teacher1.getOpenedCalsses("Biology"), st2);
     }
 }
