@@ -41,4 +41,12 @@ public class Person {
     public void setTeacher(boolean teacher) {
         this.teacher = teacher;
     }
-}
+
+    @Override
+    public String toString() {
+        if (this.teacher)
+            return "Teacehr: " + this.fName + " " + this.lName + " ";
+        else
+            return "Student: " + this.fName + " " + this.lName + " ";
+    }
+ }

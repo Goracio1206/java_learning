@@ -1,49 +1,34 @@
 package Facultativ;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Система Факультатив. Преподаватель объявляет запись на Курс.
  * Студент записывается на Курс, обучается и по окончании Препода-ватель выставляет Оценку,
  * которая сохраняется в Архиве. Студентов, Преподавателей и Курсов при обучении может быть несколько.
  */
-public class Classes {
-    private String classesName;
-    private int point;
+public class Classes extends Teacher {
+    private String classes;
+    private boolean state;
+    private HashMap<Student, Integer> studentsList = new HashMap<Student, Integer>();
 
-    public Classes(String classesName) {
-        this.classesName = classesName;
+    public Classes(String classes, boolean state) {
+        this.classes = classes;
+        this.state = state;
     }
 
-    public Classes(String classesName, int point) {
-        this.classesName = classesName;
-        this.point = point;
-    }
-
-    public Classes() {}
-
-    public String getClassesName() {
-        return classesName;
-    }
-
-    public void setClassesName(String classesName) {
-        this.classesName = classesName;
-    }
-
-    public int getPoint() {
-        return point;
-    }
-
-    public void setPoint(int point) {
-        this.point = point;
-    }
-
-    private String print() {
+    private String printStudentsList(){
         StringBuilder stb = new StringBuilder();
-        stb.append(classesName + " - " + point);
+        for (Map.Entry<Student, Integer> elem : studentsList.entrySet()){
+            stb.append(elem.getKey() + " - " + elem.getValue());
+        }
         return stb.toString();
     }
 
     @Override
     public String toString() {
-        return print();
+        return this.classes + "\n" + printStudentsList();
     }
 }
