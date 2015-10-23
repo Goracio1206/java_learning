@@ -41,6 +41,6 @@ public class Run {
         teacher1.prinClasses();
 
         Archive ar = new Archive();
-        ar.addToArchive(teacher1, teacher1.getOpenedCalsses("Biology"), st2);
+       // ar.addToArchive(teacher1, teacher1.getOpenedCalsses("Biology"), st2);
     }
 }

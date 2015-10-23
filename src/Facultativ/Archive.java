@@ -11,9 +11,9 @@ public class Archive {
     private static ArrayList<String> archive  = new ArrayList<String>();
 
     public void addToArchive(Teacher teacher, String classes, Student student) {
-        teacher
+       // teacher
         StringBuilder stb = new StringBuilder();
-        stb.append(teacher.getfName() + " " + teacher.getlName() + "  - " + classes.getStudentsList().keySet().equals(student));
+      //  stb.append(teacher.getfName() + " " + teacher.getlName() + "  - " + classes.getStudentsList().keySet().equals(student));
         archive.add(stb.toString());
     }
 
