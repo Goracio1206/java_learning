@@ -45,8 +45,8 @@ public class Person {
     @Override
     public String toString() {
         if (this.teacher)
-            return "Teacehr: " + this.fName + " " + this.lName + " ";
+            return "Teacehr: " + this.fName + " " + this.lName;
         else
-            return "Student: " + this.fName + " " + this.lName + " ";
+            return "Student: " + this.fName + " " + this.lName;
     }
  }
