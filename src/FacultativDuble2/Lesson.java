@@ -38,10 +38,19 @@ public class Lesson extends LessonsList {
         this.state = true;
     }
 
+    public HashMap<People, Integer> getStudent() {
+        return student;
+    }
+
     private String printStudent() {
         StringBuilder stb = new StringBuilder();
         for (Map.Entry<People, Integer> elem : student.entrySet()){
-            stb.append(elem.getKey() + " has a " + elem.getValue() + " point." + "\n");
+            stb.append(elem.getKey());
+            if (elem.getValue() > 0) {
+                stb.append(" has a " + elem.getValue() + " point." + "\n");
+            } else {
+                stb.append(" has no point for now." + "\n");
+            }
         }
         return stb.toString();
     }

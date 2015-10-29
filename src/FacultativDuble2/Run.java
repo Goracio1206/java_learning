@@ -1,5 +1,7 @@
 package FacultativDuble2;
 
+import FacultativDuble2.People;
+
 /**
  * Created by Vitalii.Nedzelskyi on 23.10.2015.
  */
@@ -7,20 +9,29 @@ public class Run {
     public static void main(String[] args) {
         Lesson les = new Lesson("IT");
 
-        People teacher = new Teacher("John", "Dow", "IT");
+        Teacher teacher = new Teacher("John", "Dow", "IT");
         les.openClasses();
-        les.addStudent(new Student("James", "Villson"));
-        les.addStudent(new Student("Sara", "Parker"));
-        les.addStudent(new Student("Bill", "Vill"));
-        les.addStudent(new Student("John", "Villson"));
-        les.addStudent(new Student("Janies", "Vi"));
-        les.addStudent(new Student("Jame", "Bol"));
-        les.addStudent(new Student("Robert", "Son"));
-        les.addStudent(new Student("Bruce", "Crab"));
-        les.addStudent(new Student("Jack", "V"));
+        People st1 = new Student("James", "Villson");
+        People st2 = new Student("Sara", "Parker");
+        People st3 = new Student("Bill", "Vill");
+        People st4 = new Student("Janies", "Vi");
+        People st5 = new Student("Jame", "Bol");
+        People st6 = new Student("Robert", "Son");
+        People st7 = new Student("Bruce", "Crab");
+
+        les.addStudent(st1);
+        les.addStudent(st2);
+        les.addStudent(st3);
+        les.addStudent(st4);
+        les.addStudent(st5);
+        les.addStudent(st6);
+        les.addStudent(st7);
+
 
         les.assignTeacher(teacher);
+        teacher.setPointToStudent(les, st1, 5);
 
         System.out.println(les.toString());
+
     }
 }
