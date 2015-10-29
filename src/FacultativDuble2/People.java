@@ -61,7 +61,8 @@ public class People {
         if (obj instanceof People){
             People temp = (People) obj;
             return this.fName == temp.fName && this.lName == temp.lName && this.state == temp.state;
+        }else {
+            return false;
         }
-        return false;
     }
 }
