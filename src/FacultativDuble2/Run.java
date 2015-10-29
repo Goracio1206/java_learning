@@ -1,7 +1,5 @@
 package FacultativDuble2;
 
-import FacultativDuble2.People;
-
 /**
  * Created by Vitalii.Nedzelskyi on 23.10.2015.
  */
@@ -9,7 +7,7 @@ public class Run {
     public static void main(String[] args) {
         Lesson les = new Lesson("IT");
 
-        Teacher teacher = new Teacher("John", "Dow", "IT");
+        People teacher = new Teacher("John", "Dow", "IT");
         les.openClasses();
         People st1 = new Student("James", "Villson");
         People st2 = new Student("Sara", "Parker");
@@ -25,11 +23,13 @@ public class Run {
         les.addStudent(st4);
         les.addStudent(st5);
         les.addStudent(st6);
-        les.addStudent(st7);
+
 
 
         les.assignTeacher(teacher);
-        teacher.setPointToStudent(les, st1, 5);
+        ((Teacher) teacher).setPointToStudent(les, st2, 3);
+        ((Teacher) teacher).setPointToStudent(les, st1, 5);
+        ((Teacher) teacher).setPointToStudent(les, st7, 5);
 
         System.out.println(les.toString());
 

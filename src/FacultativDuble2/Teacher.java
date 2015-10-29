@@ -19,11 +19,9 @@ public class Teacher extends People {
             if (elem.getKey().equals(student)) {
                 elem.setValue(point);
                 break;
-            } else {
-                continue;
             }
         }
-        //System.out.println("This student is not learning in this class");
+
 
 
     }
