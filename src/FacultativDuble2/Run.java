@@ -1,12 +1,14 @@
 package FacultativDuble2;
 
+import Facultativ.*;
+
 /**
  * Created by Vitalii.Nedzelskyi on 23.10.2015.
  */
 public class Run {
     public static void main(String[] args) {
         Lesson les = new Lesson("IT");
-
+        Archive ar = new Archive();
         People teacher = new Teacher("John", "Dow", "IT");
         les.openClasses();
         People st1 = new Student("James", "Villson");
@@ -32,6 +34,9 @@ public class Run {
         ((Teacher) teacher).setPointToStudent(les, st7, 5);
 
         System.out.println(les.toString());
+        ar.addToArchive(les);
+        System.out.println(ar.toString());
+
 
     }
 }

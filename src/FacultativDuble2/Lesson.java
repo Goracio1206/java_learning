@@ -1,7 +1,5 @@
 package FacultativDuble2;
 
-import Facultativ.Person;
-
 import java.util.HashMap;
 import java.util.Map;
 

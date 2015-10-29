@@ -1,7 +1,5 @@
 package FacultativDuble2;
 
-import java.util.Objects;
-
 /**
  * Created by Vitalii.Nedzelskyi on 23.10.2015.
  */
