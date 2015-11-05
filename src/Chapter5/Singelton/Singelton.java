@@ -16,4 +16,5 @@ public class Singelton {
         }
         return instance;
     }
+
 }
