@@ -1,12 +1,13 @@
 package Chapter5.AbstractFactory;
 
-import Chapter5.Factory.Base;
-
 /**
- * Created by Vitalii.Nedzelskyi on 04.11.2015.
+ * This is Main class where You can execute {@code AbstractFactory} functional.
+ * @author Vitalii Nedzelskyi
+ * @version 1.0
  */
 public class Mian {
     public static void main(String[] args) {
+
         BaseFactory fact1 = AbstractFactory.getFactory("White");
         BaseFactory fact2 = AbstractFactory.getFactory("Black");
         Circle circle1 = fact1.createCircle(4.6);
