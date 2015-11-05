@@ -10,6 +10,12 @@ public class User {
     private String name = "Admin";
     private String password = "Password1!";
 
+    public static User buildUser(BaseBuilder builder) {
+        builder.buildLogin();
+        builder.buildPassword();
+        return builder.getUser();
+    }
+
     public void setName(String name) {
         this.name = name;
     }
