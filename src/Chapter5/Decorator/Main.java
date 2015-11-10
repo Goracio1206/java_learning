@@ -10,6 +10,8 @@ public class Main {
         runner.doDrive(carDriver);
         runner.doDrive(new BusDriver(carDriver));
         runner.doDrive(new CarDriverAndForwardingAgent(carDriver));
+        BusDriver bus = new BusDriver(carDriver);
+        bus.drive();
 
     }
 
