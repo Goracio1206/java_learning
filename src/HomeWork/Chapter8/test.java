@@ -13,6 +13,5 @@ public class test {
         StringBuffer s = new StringBuffer("you java");
         s.insert(2, "like ");
         System.out.print(s);
-
     }
 }
